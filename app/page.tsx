@@ -1,5 +1,13 @@
-import { ComponentExample } from "@/components/component-example";
+import { Navbar } from "@/components/Navbar";
+// import { Hero } from "@/components/Hero";
 
 export default function Page() {
-return <ComponentExample />;
+    return (
+        <div className="min-h-screen bg-background">
+            <Navbar />
+            <main className="pt-20">
+                {/* <Hero /> */}
+            </main>
+        </div>
+    );
 }
