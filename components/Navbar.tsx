@@ -5,23 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useTheme } from "@/lib/use-theme";
-
-interface NavLink {
-    label: string;
-    href: string;
-}
-
-const navLinks: NavLink[] = [
-    { label: "Store", href: "/store" },
-    { label: "Pro", href: "/pro" },
-    { label: "AI", href: "/ai" },
-    { label: "iOS", href: "/ios" },
-    { label: "Windows", href: "/windows" },
-    { label: "Teams", href: "/teams" },
-    { label: "Developers", href: "/developers" },
-    { label: "Blog", href: "/blog" },
-    { label: "Pricing", href: "/pricing" },
-];
+import { navLinks } from "@/data/navigation";
 
 export function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -147,12 +131,12 @@ export function Navbar() {
             </div>
 
             {/* Overlay */}
-            {isMobileMenuOpen && (
+            {isMobileMenuOpen ? (
                 <div
                     className="fixed inset-0 z-30 bg-black/50 lg:hidden"
                     onClick={() => setIsMobileMenuOpen(false)}
                 />
-            )}
+            ) : null}
         </>
     );
 }

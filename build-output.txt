@@ -1,0 +1,28 @@
+
+> slothcord@0.1.0 build /home/garvit1000/projects/slothcord
+> next build
+
+▲ Next.js 16.1.3 (Turbopack)
+- Experiments (use with caution):
+  · optimizePackageImports
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.9s
+  Running TypeScript ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/6) ...
+  Generating static pages using 15 workers (1/6) 
+  Generating static pages using 15 workers (2/6) 
+  Generating static pages using 15 workers (4/6) 
+✓ Generating static pages using 15 workers (6/6) in 403.4ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /login
+└ ○ /signup
+
+
+○  (Static)  prerendered as static content
+

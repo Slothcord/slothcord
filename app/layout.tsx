@@ -16,8 +16,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Slothcord",
-  description: "Your Discord companion",
+  title: "Slothcord - All the perks, none of the paywall",
+  description: "Crystal-clear voice, HD streaming, custom profiles. Everything Discord locks behind Nitro, yours for free.",
+  keywords: ["discord alternative", "free voice chat", "gaming chat", "hd streaming", "free discord nitro"],
+  authors: [{ name: "Slothcord Team" }],
+  openGraph: {
+    title: "Slothcord - All the perks, none of the paywall",
+    description: "Crystal-clear voice, HD streaming, custom profiles. Everything Discord locks behind Nitro, yours for free.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Slothcord - All the perks, none of the paywall",
+    description: "Crystal-clear voice, HD streaming, custom profiles. Everything Discord locks behind Nitro, yours for free.",
+  },
 };
 
 export default function RootLayout({

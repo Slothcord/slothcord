@@ -1,5 +1,8 @@
 import { Navbar } from "@/components/Navbar";
-import { Hero, Features, CTA, Footer } from "@/components/landing";
+import { Hero } from "@/components/Hero";
+import { Features } from "@/components/Features";
+import { Footer } from "@/components/Footer";
+import { CTA } from "@/components/CTA";
 
 export default function Page() {
     return (
